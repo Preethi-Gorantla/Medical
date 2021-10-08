@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/style.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=n7HRSdqtdadid79edJR3i8vf2oVF5SwVImKDkErmhqlV3_ovTaoMkjbqB8nBahCMcP0IRpUoTBwNVIw5xRjYQ1fVnH0Rj6f6xY6gXgwHzlPr0ssRyBfFhcxMTdUlOv957oqCV5xNFDXyGQ0cyoVp_aEu2acyV-cHZjT8mGUk4glkman6t_0BsjXEn1T-2Bm9URuH_50czYvBOZsNKRIyXo5Bf7YseXkdYUsGptu_dT15MDN7PjmB5EdV-anZO61U4_NmboOYkDQ2fRo5q-QBcIYRUvxSKOBQCdbKG_dlgOJlqxaIij8ts0DgF3bKC0Fqpgk661783hnc031SxVUn0IUei7bH2ah7mHtA3_uSZI_rtye6SW_aluoCmRIL_wzGNEW-J8n6YBzfaN9v3PlkZFa3AouDPTOQo3wpCc_-ZAtcJoSZxw1j3okqrEt_2s-jBRPXiMdaycaYxf1zhuLKXcjTERbzkvyd2oG-DLT2wmP__Srww-JgGtKrQ4jJi6m2Vjk7GgDdA7-PdLGm6-IWpjMwU3W98J1IAo7EQvoVp4Oc9x4Iq7M-YnKf5wVuofr9dH_y0GZprWiDJRjZXLffC2bCEri0awAoSj6JSBf2w0BcDxts-ILvlPEg5roHpw9_rScW3mY3Tp92s_QLHWIEnqvDck-1i7wYvnrm6XoQIpZlRwh7IsiLLOHPFm3b8wiUeAPQbgP5I2ij7MauxAYpi_xlU0oiqNmLnKBWVHCgBANBckMyXuaRbMHNQd9Sj_HdW3pkJlgCZOEpy3k-C4FOG_WvTiFGJ3TkoYT-MxcgQj_v25vlOBmKjAQElQVTqHk-7UJTPWBE-ho439eoXIxJmJ6zhY0P7dOLDELmBDta8zGuptuhfepImzrh5rdpQZDHwDYLoUkgnS7Xh_665JcSmZaYjUkTHdByUjt3mi8O3h51dmwN2r3lV7R2tXARqkNvu_wT3NaqYuNgaMrMBZakwYVdE6Qw5A5SYufC8fl7qPimGx9Tr__M_M1JngHlRGCoipfgYAyIYpRFMQVppsx0FVG7o3Yj2MAjCQCY0CebFTqFpw_As_nfFGQ7nnD1fVUPnmxu2J1S5hiasCF8g07ww4tL-BhpVl2VqNobeJ7nrdN6QI-_Gfqml41HsuyVkrmoupj_KP3eZZ4xgLDs_pxbzHY6-dOrfAwygVdyoBnq7xbGIPY98Mji9SlcQAWR7dwZxNMJom5OFYYfhOKmHITAmQ" nonce="6dd9f20410fe439e36ce9aa6c8b85f8b" charset="UTF-8"></script><style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: White;
+  text-decoration: none;
+  font-size: 17px;
+  width: 15%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+#bodycontent label { padding-right:20px }
+</style>
+</head>
+<body>
+<h2>Medicine Store System</h2>
+<div class="navbar">
+  <a class="active" href="file:///C:/Users/sande/Desktop/Project.html">
+  <i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="../Stock/"><i class="fa fa-fw fa-search"></i> Stock</a> 
+  <a href="../purchase/"><i class="fa fa-fw fa-search"></i> Purchase</a> 
+  <a href="../Bill/"><i class="fa fa-fw fa-search"></i> Bill</a>
+  <a href="../contact/"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
+  <a href="../contact/"><i class="fa fa-fw fa-envelope"></i> Logout</a> 
+  
+</div>
+<table width="100%" border="0">
+<tr>
+<td bgcolor="#BDB76B" height="100%">
+<Center>
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div id="bodycontent" class="container">
+    <h1>Purchase form</h1>
+    <p>Please fill the medicine details which you want to purchase.</p>
+    <br>
+
+    <label for="Medicine ID">  <b>Medicine ID</b></label>
+    <input type="text" placeholder="Enter medicine ID" name="ID" required>
+    <br>
+    <br>
+    <label for="Name"><b>Comp Name  </b></label>
+    <select name="Company Name" id="Name">  
+      <option value="Company Name">Company Name</option>
+      <option value="Alpha">Alpha</option>
+      <option value="Biotech">Biotech</option>
+      <option value="ABC">ABC</option>
+      <option value="XYZ">XYZ</option>
+    </select> 
+    <br>
+    <br>
+    <label for="Name"><b>Med Name </b></label>
+      <select name="Medicine" id="Medicine">  
+      <option value="Select Medicine">Select Medicine</option>
+      <option value="DOlo 650">DOlo 650</option>
+      <option value="Cipla">Cipla</option>
+      <option value="Zintac">Zintac</option>
+      <option value="Rantac">Rantac</option>
+      <option value="AB Flow">AB Flow</option>
+      <option value="Crocine">Crocine</option>
+      <option value="Paracitmal">Paracitmal</option>
+      <option value="Forts B">Forts B</option>
+      <option value="Alarcet Dc">Alarcet Dc</option>
+      <option value="Efg">Efg</option>
+      <option value="ABC">ABC</option>
+    </select> 
+    <br>
+    <br>
+    <label for="Name"><b>Supplier Name  </b></label>
+    <input type="Name" placeholder="Supplier name" name="name" required>
+    <br>
+    <br>
+    <label for="Phone"><b>Mobile Number  </b></label>
+    <input type="Name" placeholder="Number" name="name" required>
+    <br>
+<br>
+    <label for="Manufa Date"><b>Manufac Date  </b></label>
+    <input type="date" id="date" name="manufac date">
+    <br>
+    <br>
+    <label for="Expire Date"><b>Expire Datee  </b></label>
+    <input type="date" id="date" name="Expire date">
+    <br>
+    <br>
+    <label for="Entry Date"><b>Entry Datee  </b></label>
+    <input type="date" id="date" name="entry date">
+    <br>
+    <br>
+    <label for="Name"><b>Medi Quantity  </b></label>
+    <input type="Name" placeholder="Quantity" name="name" required>
+    <br>
+    <br>
+    <label for="Name"><b>Medicine Cost  </b></label>
+    <input type="Name" placeholder="Cost" name="name" required>
+    <br>
+    
+    <p>After clicking on submit all the medicines will be submitted for purchase</p>
+
+    <div class="clearfix">
+      <button type="button" class="Addtbtn">Add</button>
+      <button type="button" class="Deletebtn">Delete</button>
+       <button type="button" class="Nextbtn">Next</button>
+      <button type="button" class="Previousbtn">Previous</button>
+      <button type="button" class="Submitbtn">Submit</button>
+      <button type="submit" class="Cancelbtn">Cancel</button>
+    </div>
+  </div>
+</form>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</center>
+</td>
+
+</tr>
+</table>
+</body>
+</html> 
